@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header class="header">
+        <h1 id="title"> Survey about <strong> EMINEM </strong> </h1>
+        <p id="description"> 
+          this survey is about the last project I wrote, I am just interested how did you understand it</p>
+      </header>
+      <!-- survey form --> 
+      <form id="survey-form"> 
+        <!--inputs --> 
+        <div class="form-group">
+          <label id="name-label">
+            Name
+            <input 
+                   id="name" 
+                   type="text"
+                   placeholder="Enput your name "
+                   class="form-control"
+                   required>
+          </label>
+        </div>
+        <div class="form-group">
+          <label id="email-label">
+            Email
+            <input 
+                   id="email" 
+                   placeholder="Enter your email" 
+                   type="email"
+                   class="form-control"
+                   required/>
+          </label>
+        </div>
+        <div class="form-group">
+          <label name="age-label">
+            Age(optional)
+            <input 
+                   id="number"
+                   type="number"
+                   class="form-control"
+                   min="10"
+                   max="30"
+                   placeholder="Age"/>
+          </label>
+        </div>
+        <!-- radio buttons in a fieldset-->
+        <div class="form-group">
+          <p class="p-question">chose the fovourity album</p>
+          <label class="label-radio">
+            <input type="radio" name="album" value="Infinite" class="input-radio">
+            Infinite
+          </label>
+          <label class="label-radio">
+            <input type="radio" name="album" value="The Marshall Mathers" class="input-radio">
+            The Marshall Mathers
+          </label>
+          <label class="label-radio">
+            <input type="radio" name="album" value="The Slim Shady" class="input-radio">
+            The Slim Shady
+          </label>
+          <label class="label-radio">
+            <input type="radio" name="album" value="Music to Be Murdered By" class="input-radio"> 
+            Music to Be Murdered By
+          </label>
+        </div>
+          <!-- dropdown for type of rap -->
+        <div class="form-group">
+          <p class="p-question"> select your favourite style </p>
+          <select class="form-control" id="dropdown" name="style"  required>
+            <option disabled selected value> Rap Style</option>
+            <option value="Alternative Rap" >Alternative Rap</option>
+            <option value="Avant-Garde">Avant-Garde</option>
+            <option value="East Coast">East Coast</option>
+            <option value="Gangsta Rap">Gangsta Rap</option>
+          </select>
+        </div>
+          <!-- checkboxes -->
+          <div class="form-group">
+            <p class="p-question"> select singers who sang with Eminem </p>
+            <label class="label-checkbox">
+              <input name="singer" value="Sia" type="checkbox"  class="input-checkbox">
+              Sia
+            </label>
+            <label class="label-checkbox">
+              <input name="singer" value="Dr. Dre, Snoop Dogg" type="checkbox" class="input-checkbox">
+              Dr. Dre, Snoop Dogg
+            </label>
+            <label class="label-checkbox">
+              <input name="singer" value="Xzibit" type="checkbox" class="input-checkbox">
+              Xzibit
+            </label>
+            <label class="label-checkbox">
+              <input name="singer" value="Ice Cube" type="checkbox" class="input-checkbox">
+              Ice Cube
+            </label>
+            <label class="label-checkbox">
+              <input name="singer" value="Rihanma" type="checkbox" class="input-checkbox">
+              Rihanna
+            </label>
+        </div>
+        <div class="form-group">
+          <p class="p-question"> write your comment how did you like the live in 2002 </p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
